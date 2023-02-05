@@ -52,7 +52,7 @@ signal_connect(add, "button-press-event") do widget, event
             for i in eachindex(userArray) 
                 if userArray[i].userID == ls[selected(selection),1]
                     setFrind(friend, userArray[i])
-                    println(userArray[i])
+                    setFrind(userArray[i], friend)
                 end
             end
         end
